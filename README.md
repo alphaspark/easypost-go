@@ -24,5 +24,5 @@ customsInfo := map[string]interface{}{
 internationalShipment, isErr := c.NewShipmentWithCustoms(fromAddressId, toAddress, parcel, customsInfo)
 
 selectedRate := "rate_..."
-irErr :=c.BuyShipment(shipment, selectedRate)
+updatedShipment, rErr :=c.BuyShipmentRate(shipment, selectedRate)
 ```
